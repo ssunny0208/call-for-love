@@ -325,7 +325,7 @@ function outro5() {
   push();
   image(out4, 0, 0, width, height);
   tint(255, imageAlpha63);
-  image(case63, 0, 0, width, height);
+  image(out4, 0, 0, width, height);
   pop();
 
   outroTextBox(5, 180, 650, 1200, 200);
@@ -334,7 +334,7 @@ function outro5() {
 
 function outro6() {
   push();
-  image(case63, 0, 0, width, height);
+  image(out4, 0, 0, width, height);
   tint(255, imageAlpha64);
   image(case9Back_2, 0, 0);
   image(out6, 0, 0, width, height);
@@ -359,7 +359,7 @@ function outro8() {
   push();
   image(out7, 0, 0, width, height);
   tint(255, imageAlpha66);
-  image(case66, 0, 0, width, height);
+  image(out7, 0, 0, width, height);
   pop();
 
   outroTextBox(8, 180, 650, 1200, 200);
@@ -368,7 +368,7 @@ function outro8() {
 
 function outro9() {
   push();
-  image(case66, 0, 0, width, height);
+  image(out7, 0, 0, width, height);
   tint(255, imageAlpha67);
   image(case9Back_2, 0, 0);
   image(out6, 0, 0, width, height);
@@ -393,7 +393,7 @@ function outro11() {
   push();
   image(out7, 0, 0, width, height);
   tint(255, imageAlpha69);
-  image(case69, 0, 0, width, height);
+  image(out7, 0, 0, width, height);
   pop();
   textWrap(WORD);
   outroTextBox(10, 180, 650, 1200, 200);
@@ -402,7 +402,7 @@ function outro11() {
 
 function outro12() {
   push();
-  image(case69, 0, 0, width, height);
+  image(out7, 0, 0, width, height);
   tint(255, imageAlpha70);
   image(case9Back_2, 0, 0);
   image(out12, 0, 0, width, height);
