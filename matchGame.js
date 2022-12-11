@@ -9,6 +9,8 @@ let case7 = [];
 let case7Num = 0;
 let case9;
 let case9Back;
+let case9Back_2;
+let case9Back_3;
 let case9BackX = 0;
 let barY_1 = 0;
 let barY = 0;
