@@ -303,7 +303,7 @@ function outro3() {
   push();
   image(out2, 0, 0, width, height);
   tint(255, imageAlpha61);
-  image(case61, 0, 0, width, height);
+  image(out2, 0, 0, width, height);
   pop();
 
   outroTextBox(3, 180, 650, 1200, 200);
@@ -312,7 +312,7 @@ function outro3() {
 
 function outro4() {
   push();
-  image(case61, 0, 0, width, height);
+  image(out2, 0, 0, width, height);
   tint(255, imageAlpha62);
   image(out4, 0, 0, width, height);
   pop();
@@ -346,7 +346,7 @@ function outro6() {
 
 function outro7() {
   push();
-  image(case61, 0, 0, width, height);
+  image(out2, 0, 0, width, height);
   tint(255, imageAlpha65);
   image(out7, 0, 0, width, height);
   pop();
@@ -380,7 +380,7 @@ function outro9() {
 
 function outro10() {
   push();
-  image(case61, 0, 0, width, height);
+  image(out2, 0, 0, width, height);
   tint(255, imageAlpha68);
   image(out7, 0, 0, width, height);
   pop();
