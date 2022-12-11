@@ -403,7 +403,7 @@ function setupListOfDialogue() {
     79: "	Gordon	",
   };
   introText = [
-    "오늘은 1947년 12월 23일.",
+    "오늘은 1947년 12월 23일이다.",
     "나는 NewYork 시의 전화교환원. Queens, Manhattan, Bronx, Brooklyn 사람들의 전화 연결을 담당한다.",
     "거리마다 트리가 늘어선 걸 보니                       올해도 벌써 끝이 다가오네.",
     "'업무가 밀려 있으니 너는 꼭 나와서 일해야 한다!'",
