@@ -258,7 +258,7 @@ function intro9() {
   image(case8Clock, 0, 0, width, height);
   tint(255, imageAlpha9);
   background(255);
-  image(case9Back_3, case9BackX, 0);
+  image(case9Back_2, case9BackX, 0);
   image(case9, 0, case9Y, width, height);
   pop();
   case9BackX -= 0.3;
