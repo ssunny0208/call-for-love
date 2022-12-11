@@ -531,7 +531,7 @@ function setupListOfCard() {
   case8Clock = loadImage("icon/case8Clock.PNG");
   case9 = loadImage("icon/case9.PNG");
   case9Back = loadImage("icon/case9Back.jpg");
-  case9Back_2 = loadImage("icon/case9Back_2.jpg");
+  case9Back_2 = loadImage("icon/case9Back_2.png");
   case9Back_3 = loadImage("icon/case9Back_3.jpg");
   introNext = loadImage("icon/next.png");
   reset = loadImage("icon/reset.png");
