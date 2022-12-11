@@ -485,19 +485,13 @@ function setupListOfCard() {
       ListOfCards_1[i][j] = loadImage("icon/card4_1.PNG");
     }
   }
-  // hiddenPhoto_1 = loadImage("icon/test_1.PNG");
-
-  // callingPhoto = loadImage("icon/call.PNG");
-  // correctPhoto = loadImage("icon/correct.PNG");
-  // wrongPhoto = loadImage("testimage/wrong.PNG");
 
   dialogue_W = loadImage("icon/ver2_white.png");
   dialogue_YG = loadImage("icon/ver2_green.png");
   dialogue_B = loadImage("icon/ver2_blue.png");
   dialogue_P = loadImage("icon/ver2_pink.png");
   option_box = loadImage("icon/기본.PNG");
-  option_box_1 = loadImage("icon/기본_1.PNG");
-  // option_box_2 = loadImage("icon/마우스오버_데이트함.PNG");
+  option_box_1 = loadImage("icon/기본_1.png");
   textBox_2 = loadImage("icon/textBox_2.png");
   book = loadImage("icon/book.png");
   book_over = loadImage("icon/book_over.png");
@@ -521,7 +515,7 @@ function setupListOfCard() {
   timerBar = loadImage("icon/timer.png");
   wire = loadImage("icon/wire.png");
   cursor = loadImage("icon/cursor.png");
-  case1 = loadImage("icon/case1.png");
+  case1 = loadImage("icon/case1.PNG");
   case3 = loadImage("icon/case3.JPG");
   for (let i = 0; i < 5; i++) {
     case4[i] = loadImage("icon/case4-" + i + ".PNG");
@@ -561,7 +555,7 @@ function setupListOfCard() {
   _24am = loadImage("icon/24am.png");
   _24pm = loadImage("icon/24pm.png");
   _25am = loadImage("icon/25am.png");
-  postIt = loadImage("icon/postit.png");
+  postIt = loadImage("icon/postit.PNG");
   tutSkip = loadImage("icon/skip.png");
   _window = loadImage("icon/window.png");
   _snow = loadImage("icon/snow_W2.png");
