@@ -552,6 +552,13 @@ function setupListOfCard() {
   case69 = loadImage("icon/case69.png");
   case70 = loadImage("icon/case70.png");
   //여기까지
+
+  out2 = loadImage("icon/outro2.PNG");
+  out4 = loadImage("icon/outro4.PNG");
+  out6 = loadImage("icon/outro6.PNG");
+  out7 = loadImage("icon/outro7.PNG");
+  out12 = loadImage("icon/outro12.PNG");
+
   _23am = loadImage("icon/23am.png");
   _23pm = loadImage("icon/23pm.png");
   _24am = loadImage("icon/24am.png");
