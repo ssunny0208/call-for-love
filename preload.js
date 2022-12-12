@@ -538,6 +538,7 @@ function setupListOfCard() {
   gameRule = loadImage("icon/gamerule.png");
   calendar1 = loadImage("icon/calendar1.png");
   startPage = loadImage("icon/start.PNG");
+  resetImage = loadImage("icon/resetButton.png");
 
   //엔딩용 추가
   case59 = loadImage("icon/case59.png");

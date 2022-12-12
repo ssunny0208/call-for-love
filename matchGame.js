@@ -66,6 +66,8 @@ let imageAlpha69 = 0;
 let imageAlpha70 = 0;
 // 여기까지
 
+let resetImage;
+
 let correctMatch;
 let correctMatchTiming;
 let matchGameResult;

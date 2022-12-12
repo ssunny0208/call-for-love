@@ -87,7 +87,7 @@ class Reset {
   }
   reset_over() {
     if (
-      mouseX > this.x &&
+      mouseX > this.x - 55 &&
       mouseX < this.x + this.w &&
       mouseY > this.y &&
       mouseY < this.y + this.h
@@ -100,8 +100,12 @@ class Reset {
       push();
       tint(80, 20, 10, 180);
       image(reset, this.x, this.y, this.w, this.h);
+      image(resetImage, this.x - 55, this.y - 10);
       pop();
-    } else image(reset, this.x, this.y, this.w, this.h);
+    } else {
+      image(reset, this.x, this.y, this.w, this.h);
+      image(resetImage, this.x - 55, this.y - 10);
+    }
   }
   reset() {
     if (this.reset_over()) {
