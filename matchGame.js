@@ -33,10 +33,10 @@ let case9Speed = 0.8;
 let timestamp = 0;
 
 //스테이지별 배경용 추가
-let playbackground_1;
-let playbackground_2;
-let playbackground_3;
-let playbackground_4;
+let window_1;
+let window_2;
+let window_3;
+let window_4;
 
 // 엔딩용 추가
 let case59;
