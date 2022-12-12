@@ -161,6 +161,7 @@ function draw() {
       break;
     case 17:
       //23일 오전 스타트
+      image(window_1, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
         dayStart = false;
@@ -180,20 +181,24 @@ function draw() {
       // stage++;
       break;
     case 18: //23일 오전 게임
+      image(window_1, 0, 0, width, height);
       cursorOn = false;
       Window(1);
       matchGameDraw_1(quiz_1_1[0]);
       break;
     case 19:
+      image(window_1, 0, 0, width, height);
       Window(2);
       matchGameDraw_2(quiz_2_1[0]);
       break;
     case 20:
+      image(window_1, 0, 0, width, height);
       Window(3);
       matchGameDraw_3(quiz_3_1[0]);
       break;
     case 21:
       //돌발전화 시작
+      image(window_1, 0, 0, width, height);
       cursorOn = true;
       stage++;
       break;
@@ -235,6 +240,7 @@ function draw() {
       break;
     case 24:
       //23일 오후 시작
+      image(window_2, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
         dayStart = false;
@@ -253,15 +259,18 @@ function draw() {
       }
       break;
     case 25: //23일 오후 게임
+      image(window_2, 0, 0, width, height);
       cursorOn = false;
       Window(5);
       matchGameDraw_2(quiz_2_1[1]);
       break;
     case 26:
+      image(window_2, 0, 0, width, height);
       Window(6);
       matchGameDraw_3(quiz_3_1[1]);
       break;
     case 27:
+      image(window_2, 0, 0, width, height);
       Window(7);
       matchGameDraw_1(quiz_1_1[1]);
       break;
@@ -307,6 +316,7 @@ function draw() {
       break;
     case 31:
       //중간결과
+      image(window_2, 0, 0, width, height);
       textSize(20);
       text("23일 실적", 1320, 350);
       text("Perfect: " + matchGameScore3, 1320, 450);
@@ -321,6 +331,7 @@ function draw() {
       break;
     case 32:
       //24일 오전 스타트
+      image(window_3, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
         dayStart = false;
@@ -340,15 +351,18 @@ function draw() {
       // stage++;
       break;
     case 33: //24일 오전 게임
+      image(window_3, 0, 0, width, height);
       cursorOn = false;
       Window(1);
       matchGameDraw_1(quiz_1_1[2]);
       break;
     case 34:
+      image(window_3, 0, 0, width, height);
       Window(2);
       matchGameDraw_2(quiz_2_1[2]);
       break;
     case 35:
+      image(window_3, 0, 0, width, height);
       Window(3);
       matchGameDraw_1(quiz_1_1[3]);
       break;
@@ -393,6 +407,7 @@ function draw() {
       break;
     case 39:
       //24일 오후 시작
+      image(window_4, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
         dayStart = false;
@@ -411,15 +426,18 @@ function draw() {
       }
       break;
     case 40: //24일 오후 게임
+      image(window_4, 0, 0, width, height);
       cursorOn = false;
       Window(5);
       matchGameDraw_3(quiz_3_1[2]);
       break;
     case 41:
+      image(window_4, 0, 0, width, height);
       Window(6);
       matchGameDraw_2(quiz_2_1[3]);
       break;
     case 42:
+      image(window_4, 0, 0, width, height);
       Window(7);
       matchGameDraw_2(quiz_2_1[4]);
       break;
@@ -505,6 +523,7 @@ function draw() {
       break;
     case 47:
       //중간결과
+      image(window_4, 0, 0, width, height);
       textSize(20);
       text("24일 실적", 1320, 350);
       text("Perfect: " + matchGameScore3, 1320, 450);
