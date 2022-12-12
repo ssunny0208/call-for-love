@@ -553,6 +553,7 @@ function setupListOfCard() {
   case70 = loadImage("icon/case70.png");
   //여기까지
 
+  out1 = loadImage("icon/outro1.PNG");
   out2 = loadImage("icon/outro2.PNG");
   out4 = loadImage("icon/outro4.PNG");
   out6 = loadImage("icon/outro6.PNG");

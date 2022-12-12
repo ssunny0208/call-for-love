@@ -45,6 +45,7 @@ let case67;
 let case69;
 let case70;
 
+let out1;
 let out2;
 let out4;
 let out6;
@@ -281,7 +282,7 @@ function intro9() {
 function outro1() {
   push();
   tint(255, imageAlpha59);
-  image(_background, 0, 0, width, height);
+  image(out1, 0, 0, width, height);
   pop();
 
   outroTextBox(1, 180, 650, 1200, 200);
@@ -290,7 +291,7 @@ function outro1() {
 
 function outro2() {
   push();
-  image(_background, 0, 0, width, height);
+  image(out1, 0, 0, width, height);
   tint(255, imageAlpha60);
   image(out2, 0, 0, width, height);
   pop();
