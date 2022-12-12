@@ -541,6 +541,13 @@ function setupListOfCard() {
   resetImage = loadImage("icon/resetButton.png");
   skipImage = loadImage("icon/skipButton.png");
 
+  //스테이지별 배경
+  
+  playbackground_1 = loadImage("icon/playbackground_1.png");
+  playbackground_2 = loadImage("icon/playbackground_2.png");
+  playbackground_3 = loadImage("icon/playbackground_3.png");
+  playbackground_4 = loadImage("icon/playbackground_4.png");
+  
   //엔딩용 추가
   case59 = loadImage("icon/case59.png");
   case60 = loadImage("icon/case60.png");
