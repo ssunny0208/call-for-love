@@ -1031,7 +1031,7 @@ function Window(n) {
       SNOWFLAKESY[i] = windowY + 15;
     } else SNOWFLAKESY[i] += GRAVITY;
   }
-  image(_window, windowX, windowY, windowW, windowH);
+  // image(_window, windowX, windowY, windowW, windowH);
   pop();
 }
 
