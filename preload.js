@@ -543,10 +543,10 @@ function setupListOfCard() {
 
   //스테이지별 배경
   
-  playbackground_1 = loadImage("icon/playbackground_1.PNG");
-  playbackground_2 = loadImage("icon/playbackground_2.PNG");
-  playbackground_3 = loadImage("icon/playbackground_3.PNG");
-  playbackground_4 = loadImage("icon/playbackground_4.PNG");
+  let playbackground_1 = loadImage("icon/playbackground_1.PNG");
+  let playbackground_2 = loadImage("icon/playbackground_2.PNG");
+  let playbackground_3 = loadImage("icon/playbackground_3.PNG");
+  let playbackground_4 = loadImage("icon/playbackground_4.PNG");
   
   //엔딩용 추가
   case59 = loadImage("icon/case59.png");
