@@ -125,9 +125,9 @@ let click_book3 = false;
 let click_book4 = false;
 let click_book5 = false;
 let hideLine = false;
-let windowX = 1190;
+let windowX = 1000;
 let windowY = 0;
-let windowW = 400;
+let windowW = 600;
 let windowH = 260;
 
 let SNOWFLAKE_COUNT = 30;
