@@ -510,7 +510,7 @@ function setupListOfCard() {
   tab4_1 = loadImage("icon/tab4_1.png");
   tab5 = loadImage("icon/tab5.png");
   tab5_1 = loadImage("icon/tab5_1.png");
-  _background = loadImage("icon/background.jpg");
+  _background = loadImage("icon/background.PNG");
   _background_1 = loadImage("icon/background_1.jpg");
   timerBar = loadImage("icon/timer.png");
   wire = loadImage("icon/wire.png");
