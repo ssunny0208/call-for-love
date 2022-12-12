@@ -627,10 +627,13 @@ function draw() {
     //여기까지
   }
 
+  
+  resetButton.reset_show();
+
   if (cursorOn) {
     image(cursor, mouseX - 20, mouseY - 20, 40, 40);
   }
-  resetButton.reset_show();
+  
 }
 function keyPressed() {
   if (stage == 0) {

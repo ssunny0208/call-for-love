@@ -90,7 +90,7 @@ class Reset {
       mouseX > this.x - 55 &&
       mouseX < this.x + this.w &&
       mouseY > this.y &&
-      mouseY < this.y + this.h
+      mouseY < this.y + this.h + 10
     ) {
       return true;
     } else return false;
