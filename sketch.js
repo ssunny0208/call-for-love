@@ -161,7 +161,6 @@ function draw() {
       break;
     case 17:
       //23일 오전 스타트
-      image(playbackground_1, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
         dayStart = false;
@@ -181,29 +180,24 @@ function draw() {
       // stage++;
       break;
     case 18: //23일 오전 게임
-      image(playbackground_1, 0, 0, width, height);
       cursorOn = false;
       Window(1);
       matchGameDraw_1(quiz_1_1[0]);
       break;
     case 19:
-      image(playbackground_1, 0, 0, width, height);
       Window(2);
       matchGameDraw_2(quiz_2_1[0]);
       break;
     case 20:
-      image(playbackground_1, 0, 0, width, height);
       Window(3);
       matchGameDraw_3(quiz_3_1[0]);
       break;
     case 21:
       //돌발전화 시작
-      image(playbackground_1, 0, 0, width, height);
       cursorOn = true;
       stage++;
       break;
     case 22: //돌발전화 1-1
-      image(playbackground_1, 0, 0, width, height);
       image(_background_1, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
       Window(4);
@@ -228,7 +222,6 @@ function draw() {
       }
       break;
     case 23: //돌발전화 선택지 1-1
-      image(playbackground_1, 0, 0, width, height);
       image(_background_1, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
       Window(4);
