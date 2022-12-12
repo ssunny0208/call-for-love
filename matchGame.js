@@ -67,6 +67,7 @@ let imageAlpha70 = 0;
 // 여기까지
 
 let resetImage;
+let skipImage;
 
 let correctMatch;
 let correctMatchTiming;

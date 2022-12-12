@@ -53,10 +53,10 @@ class Skip {
   }
   skip_over() {
     if (
-      mouseX > this.x &&
+      mouseX > this.x - 55 &&
       mouseX < this.x + this.w &&
       mouseY > this.y &&
-      mouseY < this.y + this.h
+      mouseY < this.y + this.h + 10
     ) {
       return true;
     } else return false;
@@ -66,8 +66,12 @@ class Skip {
       push();
       tint(80, 20, 10, 180);
       image(tutSkip, this.x, this.y, this.w, this.h);
+      image(skipImage, this.x - 55, this.y - 10);
       pop();
-    } else image(tutSkip, this.x, this.y, this.w, this.h);
+    } else {
+      image(tutSkip, this.x, this.y, this.w, this.h);
+      image(skipImage, this.x - 55, this.y - 10);
+    }
   }
   skip() {
     if (this.skip_over()) {
