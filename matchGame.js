@@ -1021,6 +1021,7 @@ function Window(n) {
     fill(87, 68, 111);
   }
   rectMode(CORNER);
+  pop();
   rect(windowX + 2, windowY, windowW - 2, windowH);
 
   for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
