@@ -130,7 +130,7 @@ let windowY = 0;
 let windowW = 425;
 let windowH = 70;
 
-let SNOWFLAKE_COUNT = 30;
+let SNOWFLAKE_COUNT = 20;
 let GRAVITY = 1;
 
 function intro1() {
