@@ -125,10 +125,10 @@ let click_book3 = false;
 let click_book4 = false;
 let click_book5 = false;
 let hideLine = false;
-let windowX = 1200;
+let windowX = 1150;
 let windowY = 0;
 let windowW = 600;
-let windowH = 80;
+let windowH = 70;
 
 let SNOWFLAKE_COUNT = 30;
 let GRAVITY = 1;
