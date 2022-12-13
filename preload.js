@@ -548,6 +548,11 @@ function setupListOfCard() {
   window_3 = loadImage("icon/window_3.PNG");
   window_4 = loadImage("icon/window_4.PNG");
   
+  window_1b = loadImage("icon/window_1b.PNG");
+  window_2b = loadImage("icon/window_2b.PNG");
+  window_3b = loadImage("icon/window_3b.PNG");
+  window_4b = loadImage("icon/window_4b.PNG");
+  
   //엔딩용 추가
   case59 = loadImage("icon/case59.png");
   case60 = loadImage("icon/case60.png");
