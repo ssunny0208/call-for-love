@@ -161,6 +161,7 @@ function draw() {
       break;
     case 17:
       //23일 오전 스타트
+      Window(1);
       image(window_1, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
@@ -226,7 +227,6 @@ function draw() {
       }
       break;
     case 23: //돌발전화 선택지 1-1
-      
       Window(4);
       image(window_1b, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
@@ -240,6 +240,7 @@ function draw() {
       break;
     case 24:
       //23일 오후 시작
+      Window(5);
       image(window_2, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
@@ -280,7 +281,6 @@ function draw() {
       stage++;
       break;
     case 29: //돌발전화 1-2
-      
       Window(8);
       image(window_2b, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
@@ -306,7 +306,6 @@ function draw() {
       }
       break;
     case 30: //돌발전화 선택지 1-2
-      
       Window(8);
       image(window_2b, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
@@ -318,6 +317,7 @@ function draw() {
       break;
     case 31:
       //중간결과
+      Window(8);
       image(window_2, 0, 0, width, height);
       textSize(20);
       text("23일 실적", 1320, 350);
@@ -333,6 +333,7 @@ function draw() {
       break;
     case 32:
       //24일 오전 스타트
+      Window(1);
       image(window_3, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
@@ -374,7 +375,6 @@ function draw() {
       stage++;
       break;
     case 37: //돌발전화 2-1
-      
       Window(4);
       image(window_3b, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
@@ -399,7 +399,6 @@ function draw() {
       }
       break;
     case 38: //돌발전화 선택지 2-1
-      
       Window(4);
       image(window_3b, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
@@ -411,6 +410,7 @@ function draw() {
       break;
     case 39:
       //24일 오후 시작
+      Window(5);
       image(window_4, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
@@ -451,7 +451,6 @@ function draw() {
       stage++;
       break;
     case 44: //돌발전화 2-3 (의문의 여자)
-      
       Window(8);
       image(window_4b, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
@@ -476,7 +475,6 @@ function draw() {
       }
       break;
     case 45: //돌발전화 2-2
-     
       Window(8);
       image(window_4b, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
@@ -512,7 +510,6 @@ function draw() {
       }
       break;
     case 46: //돌발전화 선택지 2-2
-      
       Window(8);
       image(window_4b, 0, 0, width, height);
       image(postIt, 0, 0, width, height);
@@ -530,6 +527,7 @@ function draw() {
       break;
     case 47:
       //중간결과
+      Window(8);
       image(window_4, 0, 0, width, height);
       textSize(20);
       text("24일 실적", 1320, 350);
@@ -545,6 +543,8 @@ function draw() {
       nextButton.show();
       break;
     case 58:
+      Window(1);
+      image(window_4, 0, 0, width, height);
       if (dayStart) {
         dayStartTiming = millis();
         dayStart = false;
