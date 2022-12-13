@@ -38,8 +38,8 @@ function setup() {
   introSound.setVolume(0.5);
   outroSound.setVolume(0.5);
   for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
-    SNOWFLAKESX.push(random(windowX + 15, windowX + windowW - 15));
-    SNOWFLAKESY.push(random(windowY + 15, windowY + windowH - 15));
+    SNOWFLAKESX.push(random(windowX, windowX + windowW));
+    SNOWFLAKESY.push(random(windowY, windowY + windowH));
     SNOWFLAKESW.push(random(8, 20));
   }
 }
@@ -436,7 +436,6 @@ function draw() {
       matchGameDraw_2(quiz_2_1[3]);
       break;
     case 42:
-     
       Window(7);
       image(window_4, 0, 0, width, height);
       matchGameDraw_2(quiz_2_1[4]);
@@ -646,13 +645,11 @@ function draw() {
     //여기까지
   }
 
-  
   resetButton.reset_show();
 
   if (cursorOn) {
     image(cursor, mouseX - 20, mouseY - 20, 40, 40);
   }
-  
 }
 function keyPressed() {
   if (stage == 0) {
