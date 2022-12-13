@@ -116,6 +116,7 @@ class Reset {
       stage = 0;
       enter = 0;
       introSound.stop();
+      introSound.setVolume(0.5);
       outroSound.stop();
       timerSound.stop();
       callSound.stop();
@@ -183,13 +184,6 @@ class Reset {
       pts = [];
       snows = [];
 
-      matchGameScore = 0;
-      matchGameScore1 = 0;
-      matchGameScore2 = 0;
-      matchGameScore3 = 0;
-
-      matchGameScoreIsTrue = false;
-
       clickNum = 0;
 
       wrongAnswerDelayCount = 2;
@@ -214,10 +208,12 @@ class Reset {
       quiz_3_1 = shuffle(quiz_3);
 
       // introSound.setVolume(0.2);
+      matchGameScore = 0;
+      matchGameScore1 = 0;
+      matchGameScore2 = 0;
+      matchGameScore3 = 0;
 
-      if (introSound.isPlaying()) {
-        introSound.stop();
-      }
+      matchGameScoreIsTrue = false;
     }
   }
 }
