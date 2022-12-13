@@ -38,6 +38,11 @@ let window_2;
 let window_3;
 let window_4;
 
+let window_1b;
+let window_2b;
+let window_3b;
+let window_4b;
+
 // 엔딩용 추가
 let case59;
 let case60;
