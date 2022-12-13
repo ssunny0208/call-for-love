@@ -184,6 +184,7 @@ function intro2() {
   rect(0, height, width, height / 2 + 150);
   tint(255, imageAlpha2);
   image(_background, 0, 0, width, height);
+  image(window_1, 0, 0, width, height);
   pop();
 
   introTextBox(2, 180, 350, 1200, 200);
