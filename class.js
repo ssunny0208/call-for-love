@@ -171,10 +171,10 @@ class Reset {
       imageAlpha69 = 0;
       imageAlpha70 = 0;
 
-      windowX = 1200;
-      windowY = 10;
-      windowW = 390;
-      windowH = 250;
+      windowX = 1175;
+      windowY = 0;
+      windowW = 425;
+      windowH = 70;
 
       case9Y = 0;
       case9Speed = 0.8;
