@@ -13,6 +13,7 @@ let loveResult2 = false;
 let cursorOn = true;
 let outroSoundIsTrue = false;
 let SNOWFLAKESX = [];
+let SNOWFLAKESX_1 = [];
 let SNOWFLAKESY = [];
 let SNOWFLAKESW = [];
 
@@ -41,6 +42,9 @@ function setup() {
     SNOWFLAKESX.push(random(windowX, windowX + windowW));
     SNOWFLAKESY.push(random(windowY - 15, windowY + windowH - 10));
     SNOWFLAKESW.push(random(8, 20));
+  }
+  for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
+    SNOWFLAKESX_1[i] = SNOWFLAKESX[i];
   }
 }
 

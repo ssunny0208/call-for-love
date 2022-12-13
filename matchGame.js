@@ -135,7 +135,7 @@ let windowW = 425;
 let windowH = 70;
 
 let SNOWFLAKE_COUNT = 20;
-let GRAVITY = 1;
+let GRAVITY = 0.7;
 
 function intro1() {
   //눈꺼풀
@@ -1024,20 +1024,26 @@ function Window(n) {
   rect(windowX + 2, windowY, windowW - 2, windowH);
 
   for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
+    push();
     noStroke();
     fill(255);
+    pop();
     image(
       _snow,
-      SNOWFLAKESX[i],
+      SNOWFLAKESX_1[i],
       SNOWFLAKESY[i],
       SNOWFLAKESW[i],
       SNOWFLAKESW[i]
     );
-    if (SNOWFLAKESY[i] > windowH - SNOWFLAKESW[i]) {
-      SNOWFLAKESY[i] = windowY + 15;
-    } else SNOWFLAKESY[i] += GRAVITY;
+
+    if (SNOWFLAKESY[i] <= windowH - SNOWFLAKESW[i]) {
+      SNOWFLAKESY[i] += GRAVITY;
+      SNOWFLAKESX_1[i] += GRAVITY;
+    } else {
+      SNOWFLAKESY[i] = windowY;
+      SNOWFLAKESX_1[i] = SNOWFLAKESX[i];
+    }
   }
-  pop();
 }
 
 function matchGameDraw_1([qr, qc, ar, ac]) {
