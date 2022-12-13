@@ -192,8 +192,6 @@ class Reset {
       stageStartTiming = 0;
       stageStart = true;
 
-      stop = false;
-
       click_book0 = false;
       click_book1 = false;
       click_book2 = false;

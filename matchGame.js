@@ -108,8 +108,6 @@ let wrongAnswerDelay = false;
 let stageStartTiming = 0;
 let stageStart = true;
 
-let stop = false;
-
 let dialogue_x;
 let dialogue_y;
 let dialogue_w;
