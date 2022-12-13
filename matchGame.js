@@ -79,6 +79,7 @@ let imageAlpha70 = 0;
 
 let resetImage;
 let skipImage;
+let endingImage;
 
 let correctMatch;
 let correctMatchTiming;

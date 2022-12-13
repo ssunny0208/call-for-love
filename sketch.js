@@ -642,13 +642,16 @@ function draw() {
       introNextButton.show();
       break;
     case 71:
-      image(startPage, 0, 0, width, height);
+      // image(startPage, 0, 0, width, height);
+      // push();
+      // fill(255);
+      // textSize(30);
+      // textAlign(CENTER);
+      // pop();
+      // text("THE END", width / 2, 700);
       push();
-      fill(255);
-      textSize(30);
-      textAlign(CENTER);
+      image(endingImage, 0, 0, width, height);
       pop();
-      text("THE END", width / 2, 700);
       break;
     //여기까지
   }
