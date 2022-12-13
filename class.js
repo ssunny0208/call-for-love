@@ -212,7 +212,6 @@ class Reset {
       matchGameScore1 = 0;
       matchGameScore2 = 0;
       matchGameScore3 = 0;
-
       matchGameScoreIsTrue = false;
     }
   }
