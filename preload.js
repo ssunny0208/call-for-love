@@ -263,6 +263,7 @@ function outroTextBox(i, x, y, w, h) {
   push();
   image(textBox_2, x, y, w, h);
   textAlign(CENTER, CENTER);
+  fill(0);
   textSize(38);
   textWrap(WORD);
   text(outroText[i - 1], x + 130, y + 40, 900, 100);
