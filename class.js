@@ -182,7 +182,6 @@ class Reset {
       timestamp = 0;
 
       pts = [];
-      snows = [];
 
       clickNum = 0;
 
