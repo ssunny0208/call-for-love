@@ -39,7 +39,7 @@ function setup() {
   outroSound.setVolume(0.5);
   for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
     SNOWFLAKESX.push(random(windowX, windowX + windowW));
-    SNOWFLAKESY.push(random(windowY, windowY + windowH));
+    SNOWFLAKESY.push(random(windowY - 15, windowY + windowH - 10));
     SNOWFLAKESW.push(random(8, 20));
   }
 }
