@@ -202,9 +202,9 @@ function draw() {
       stage++;
       break;
     case 22: //돌발전화 1-1
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
       Window(4);
+      image(window_1b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_1(6, 9);
 
       push();
@@ -226,9 +226,10 @@ function draw() {
       }
       break;
     case 23: //돌발전화 선택지 1-1
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
+      
       Window(4);
+      image(window_1b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_2(6, 9);
       // image(dialog, dialogue_x, dialogue_y, 500, 600);
 
@@ -279,9 +280,10 @@ function draw() {
       stage++;
       break;
     case 29: //돌발전화 1-2
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
+      
       Window(8);
+      image(window_2b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_1(6, 9);
       // image(dialog, dialogue_x, dialogue_y, 500, 600);
 
@@ -304,9 +306,10 @@ function draw() {
       }
       break;
     case 30: //돌발전화 선택지 1-2
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
+      
       Window(8);
+      image(window_2b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_2(6, 9);
       for (let i = 0; i < text1_2_selection.length; i++) {
         text1_2_selection[i].display();
@@ -371,9 +374,10 @@ function draw() {
       stage++;
       break;
     case 37: //돌발전화 2-1
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
+      
       Window(4);
+      image(window_3b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_1(6, 9);
       // image(dialog, dialogue_x, dialogue_y, 500, 600);
       push();
@@ -395,9 +399,10 @@ function draw() {
       }
       break;
     case 38: //돌발전화 선택지 2-1
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
+      
       Window(4);
+      image(window_3b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_2(6, 9);
       // image(dialog, dialogue_x, dialogue_y, 500, 600);
       for (let i = 0; i < text2_1_selection.length; i++) {
@@ -446,9 +451,10 @@ function draw() {
       stage++;
       break;
     case 44: //돌발전화 2-3 (의문의 여자)
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
+      
       Window(8);
+      image(window_4b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_3(2, 0);
       push();
       fill(0);
@@ -470,9 +476,10 @@ function draw() {
       }
       break;
     case 45: //돌발전화 2-2
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
+     
       Window(8);
+      image(window_4b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_1(6, 9);
       push();
       fill(0);
@@ -505,9 +512,10 @@ function draw() {
       }
       break;
     case 46: //돌발전화 선택지 2-2
-      image(_background_1, 0, 0, width, height);
-      image(postIt, 0, 0, width, height);
+      
       Window(8);
+      image(window_4b, 0, 0, width, height);
+      image(postIt, 0, 0, width, height);
       showQuestion_2(6, 9);
       // image(dialog, dialogue_x, dialogue_y, 500, 600);
       if (loveScore <= 3) {
