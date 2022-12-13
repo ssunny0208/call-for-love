@@ -125,9 +125,9 @@ let click_book3 = false;
 let click_book4 = false;
 let click_book5 = false;
 let hideLine = false;
-let windowX = 1000;
+let windowX = 1150;
 let windowY = 0;
-let windowW = 600;
+let windowW = 450;
 let windowH = 70;
 
 let SNOWFLAKE_COUNT = 30;
@@ -1031,7 +1031,6 @@ function Window(n) {
       SNOWFLAKESY[i] = windowY + 15;
     } else SNOWFLAKESY[i] += GRAVITY;
   }
-  // image(_window, windowX, windowY, windowW, windowH);
   pop();
 }
 
