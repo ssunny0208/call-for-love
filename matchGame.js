@@ -193,6 +193,7 @@ function intro2() {
 function intro3() {
   push();
   image(_background, 0, 0, width, height);
+  image(window_1, 0, 0, width, height);
   tint(255, imageAlpha3);
   image(case3, 0, 0, width, height);
   pop();
