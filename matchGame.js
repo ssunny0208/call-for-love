@@ -711,6 +711,60 @@ function showMatch([qR, qC, aR, aC]) {
     wrongAnswerTiming = millis();
   } // 오답 클릭 시 "아니에요"가 2초 동안 팝업하기 위해 타이밍과 오답 횟수 저장
   console.log(clickNum);
+
+  //SOUND
+
+  if (correctMatch) {
+    if (
+      !stageStart &&
+      matchGameResult > 0 &&
+      matchGameResult <= gameTimer.maxTime / 3
+    ) {
+      callSuccessSound_1.play();
+
+      if (matchGameScoreIsTrue) {
+        matchGameScore += 3;
+        matchGameScore3++;
+        matchGameScoreIsTrue = false;
+      }
+    } else if (
+      !stageStart &&
+      matchGameResult > gameTimer.maxTime / 3 &&
+      matchGameResult <= (gameTimer.maxTime * 2) / 3
+    ) {
+      callSuccessSound_2.play();
+
+      if (matchGameScoreIsTrue) {
+        matchGameScore += 2;
+        matchGameScore2++;
+        matchGameScoreIsTrue = false;
+      }
+    } else if (
+      !stageStart &&
+      matchGameResult > (gameTimer.maxTime * 2) / 3 &&
+      matchGameResult <= gameTimer.maxTime
+    ) {
+      callSuccessSound_3.play();
+
+      if (matchGameScoreIsTrue) {
+        matchGameScore += 1;
+        matchGameScore1++;
+        matchGameScoreIsTrue = false;
+      }
+    }
+  }
+
+  if (
+    //오답 시 "아니에요" 2초간 팝업
+    wrongAnswerDelay &&
+    (millis() - wrongAnswerTiming) / 1000.0 < wrongAnswerDelay
+  ) {
+    if (!correctMatch) {
+      callFailureSound.setVolume(0.5);
+      callFailureSound.play();
+    }
+  } else {
+  }
 }
 
 function showAnswer() {
@@ -772,9 +826,9 @@ function showAnswer() {
       matchGameResult > 0 &&
       matchGameResult <= gameTimer.maxTime / 3
     ) {
-      if (!callSuccessSound_1.isPlaying()) {
-        callSuccessSound_1.play();
-      }
+      // if (!callSuccessSound_1.isPlaying()) {
+      //   callSuccessSound_1.play();
+      // }
       text("최고예요!", dialogue_x + 140, dialogue_y + 460);
       if (matchGameScoreIsTrue) {
         matchGameScore += 3;
@@ -786,9 +840,9 @@ function showAnswer() {
       matchGameResult > gameTimer.maxTime / 3 &&
       matchGameResult <= (gameTimer.maxTime * 2) / 3
     ) {
-      if (!callSuccessSound_2.isPlaying()) {
-        callSuccessSound_2.play();
-      }
+      // if (!callSuccessSound_2.isPlaying()) {
+      //   callSuccessSound_2.play();
+      // }
       text("고마워요", dialogue_x + 140, dialogue_y + 460);
       if (matchGameScoreIsTrue) {
         matchGameScore += 2;
@@ -800,9 +854,9 @@ function showAnswer() {
       matchGameResult > (gameTimer.maxTime * 2) / 3 &&
       matchGameResult <= gameTimer.maxTime
     ) {
-      if (!callSuccessSound_3.isPlaying()) {
-        callSuccessSound_3.play();
-      }
+      // if (!callSuccessSound_3.isPlaying()) {
+      //   callSuccessSound_3.play();
+      // }
       text("휴.. 겨우 연결했네", dialogue_x + 140, dialogue_y + 460);
       if (matchGameScoreIsTrue) {
         matchGameScore += 1;
@@ -818,10 +872,10 @@ function showAnswer() {
     (millis() - wrongAnswerTiming) / 1000.0 < wrongAnswerDelay
   ) {
     if (!correctMatch) {
-      if (!callFailureSound.isPlaying()) {
-        callFailureSound.setVolume(0.5);
-        callFailureSound.play();
-      }
+      // if (!callFailureSound.isPlaying()) {
+      //   callFailureSound.setVolume(0.5);
+      //   callFailureSound.play();
+      // }
       image(
         dialogue_W,
         dialogue_x + 80,
