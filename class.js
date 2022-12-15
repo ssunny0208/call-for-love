@@ -331,7 +331,10 @@ class Timer {
 
     if (this.now == this.maxTime) {
       if (timerSound.isPlaying()) {
-        timerSound.stop();
+        try {
+          timerSound.stop();
+          timerSound.disconnect();
+        } catch (e) {}
       }
       if (this.stopFrameCountIsTrue) {
         this.stopFrameCount = frameCount;
@@ -363,7 +366,10 @@ class Timer {
       }
       if (this.answerDelayCount == 0) {
         if (callFailureSound.isPlaying()) {
-          callFailureSound.stop();
+          try {
+            callFailureSound.stop();
+            callFailureSound.disconnect();
+          } catch (e) {}
         }
         clickNum = 0;
         this.now = 0;
@@ -383,7 +389,11 @@ class Timer {
       }
     }
     if (this.timerStop) {
-      timerSound.stop();
+      try {
+        timerSound.stop();
+        timerSound.disconnect();
+      } catch (e) {}
+
       if (
         frameCount % 60 == this.stopFrameCount % 60 &&
         this.answerDelayCount > 0
@@ -392,11 +402,20 @@ class Timer {
       }
       if (this.answerDelayCount == 0) {
         if (callSuccessSound_1.isPlaying()) {
-          callSuccessSound_1.stop();
+          try {
+            callSuccessSound_1.stop();
+            callSuccessSound_1.disconnect();
+          } catch (e) {}
         } else if (callSuccessSound_2.isPlaying()) {
-          callSuccessSound_2.stop();
+          try {
+            callSuccessSound_2.stop();
+            callSuccessSound_2.disconnect();
+          } catch (e) {}
         } else if (callSuccessSound_3.isPlaying()) {
-          callSuccessSound_3.stop();
+          try {
+            callSuccessSound_3.stop();
+            callSuccessSound_3.disconnect();
+          } catch (e) {}
         }
         clickNum = 0;
         this.now = 0;
