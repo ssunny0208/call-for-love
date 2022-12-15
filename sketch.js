@@ -564,7 +564,10 @@ function draw() {
         dayStart = true;
         stageStart = true;
         if (introSound.isPlaying()) {
-          introSound.stop();
+          try {
+            introSound.stop();
+            introSound.disconnect();
+          } catch (e) {}
         }
         outroSoundIsTrue = true;
       }
